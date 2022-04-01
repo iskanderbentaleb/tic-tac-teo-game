@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(25, 25, 28); 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.all{
+    width:100%;
+    height: 100%; 
+    margin-top: 6%; 
+    text-align: center;
+}
+
+.all h2{
+   color: rgb(255, 66, 52); 
+   margin-top: -30px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Tic_tac_tow{
+    width:450px; 
+    border-radius: 2px; 
+    height: 450px; 
+    background-color:rgb(25, 25, 28);
+    margin: auto; 
+    box-shadow: 0.5px 2px 3px 2px rgb(255, 66, 52);
+    animation: shdw 10s ease-in-out infinite;
+}
+@keyframes shdw{
+    0%{
+        box-shadow: 0.5px 2px 3px 2px rgb(255, 66, 52);
+    }
+    50%{
+        box-shadow: 0.5px 2px 3px 2px rgb(203, 255, 80);
+    }
+    100%{
+        box-shadow: 0.5px 2px 3px 2px rgb(255, 66, 52);
+    }
+}
+
+.line_1 , .line_3{
+    display: flex; 
+    height: 33%;
+}
+.line_2{
+    display: flex; 
+    height: 34%;
+}
+
+.colone{
+    background-color: rgb(255, 255, 255); 
+    border-radius: 5px;
+    margin:9px; 
+    width:30%; 
+    height: 90%;
+    font-size: 95px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.all_scoor{
+    width: 450px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(255, 66, 52);
+}
+.x,.o{
+    height: 90%; 
+    width: 50%; 
+    background-color: rgb(0, 0, 0);
+}
+p{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(203, 255, 80);
+    color: black;
+    height: 100%; 
+    width: 20%; 
+    font-size: 30px; 
+    margin-top: 0px;
+}
+
+#Scoor_o,#Scoor_x{
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
